@@ -2082,7 +2082,43 @@ input::-moz-focus-inner {
 .no-js .s-hero {
   background: #DBA860;
 }
+/* Hero Section - Add this under the "# hero" comment in main.css */
+.s-hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 786px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
 
+.s-hero .hero-content {
+    padding-top: 20vh;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 800px) {
+    .s-hero {
+        min-height: 100vh;
+        padding: 15rem 0 20rem;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+
+    .s-hero .hero-content {
+        padding-top: 15vh;
+    }
+    
+    .hero-social {
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .s-hero {
+        min-height: 80vh;
+    }
+}
 /* -------------------------------------------------------------------
  * ## hero left bar
  * ------------------------------------------------------------------- */
